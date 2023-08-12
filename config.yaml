@@ -1,0 +1,16 @@
+app:
+  port: 9001
+mysql:
+  username: root
+  password:  #mysql密码
+  host: localhost
+  port: 3306
+  dbname:   #监控的库
+  show-sql: true
+mysql-monitor:
+  max-connections-rate: 90 #最大连接数比例 比如90%
+  transaction-max-allow-second: 60 #配置设置长事务的最大允许时间
+  dirty-page-max-rate: 75 #数据库脏页比例
+  max-cpu: 90 #cpu
+server-monitor:
+  mem-max-used-percent: 90 #内存使用最大比例
